@@ -25,9 +25,10 @@ namespace EmployeeWage2._0
         {
             this.totalEmpWage = totalEmpWage;
         }
-        public override string ToString()//representing objects into string so it can be readable .
+        public override string ToString()
         {
-            return "Total Emp Wage for company : " + this.company + " is : " + this.totalEmpWage;
+
+            return this.company + " emp wage is " + this.totalEmpWage;
         }
     }
 }
