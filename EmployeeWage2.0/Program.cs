@@ -10,7 +10,9 @@ namespace EmployeeWage2._0
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome To Employee Wage Program");
+            Console.WriteLine("Welcome To Employee Wage Program\n");
+            EmployeeWage employee= new EmployeeWage();
+            employee.chekingattendance();
             Console.ReadLine();
         }
     }
