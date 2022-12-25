@@ -9,10 +9,10 @@ namespace EmployeeWage2._0
 {
     public class  EmployeeWage
     {
-        public void  chekingattendance()
+        public static int  chekingattendance()
         {
-            int IS_FULL_TIME = 1;
-            int IS_PART_TIME = 2;
+            const int IS_FULL_TIME = 1;
+            const int IS_PART_TIME = 2;
             int EMP_RATE_PER_HR = 20;
             int NUM_OF_WORKING_DAYS = 20;
             int MAX_HRS_IN_MONTH = 100;
@@ -32,7 +32,7 @@ namespace EmployeeWage2._0
                     case 2:
                     IS_PART_TIME:
                         empHrs = 4;
-                        Console.WriteLine("EMployee is Part Time");
+                        Console.WriteLine("Employee is Part Time");
                         break;
                     default:
                         empHrs = 0;
@@ -42,10 +42,9 @@ namespace EmployeeWage2._0
                 totalEmpHrs += empHrs;
                 Console.WriteLine("Day : " + totalWorkingDays + "Emp HRS : " +empHrs);
             }
-            int totalEmpWage = totalEmpHrs + EMP_RATE_PER_HR;
+            int totalEmpWage = totalEmpHrs * EMP_RATE_PER_HR;
             Console.WriteLine("Employee Wage For 20 Days Of Month is :" + totalEmpWage);
+            return totalEmpWage;
         }
-         
-
     }
 }

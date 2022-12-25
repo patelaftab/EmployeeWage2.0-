@@ -11,8 +11,8 @@ namespace EmployeeWage2._0
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome To Employee Wage Program\n");
-            EmployeeWage employee= new EmployeeWage();
-            employee.chekingattendance();
+            //EmployeeWage employee= new EmployeeWage();
+            EmployeeWage.chekingattendance();
             Console.ReadLine();
         }
     }
