@@ -21,11 +21,11 @@ namespace EmployeeWage2._0
             this.numOfWorkingDays = numOfWorkingDays;
             this.maxHoursPerMonth = maxHoursPerMonth;
         }
-        public void setTotalEmpWage(int totalEmpWage)
+        public void SetTotalEmpWage(int totalEmpWage)
         {
             this.totalEmpWage = totalEmpWage;
         }
-        public override string ToString()
+        public override string ToString()//representing objects into string so it can be readable .
         {
             return "Total Emp Wage for company : " + this.company + " is : " + this.totalEmpWage;
         }
