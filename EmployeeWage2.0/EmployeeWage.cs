@@ -7,44 +7,40 @@ using System.Threading.Tasks;
 
 namespace EmployeeWage2._0
 {
-    public class  EmployeeWage
-    {
-        public static int  chekingattendance()
-        {
-            const int IS_FULL_TIME = 1;
-            const int IS_PART_TIME = 2;
-            int EMP_RATE_PER_HR = 20;
-            int NUM_OF_WORKING_DAYS = 20;
-            int MAX_HRS_IN_MONTH = 100;
-            int empHrs = 0, totalEmpHrs = 0, totalWorkingDays = 0;
-            while (totalEmpHrs<= MAX_HRS_IN_MONTH && totalWorkingDays < NUM_OF_WORKING_DAYS)
-            {
-                totalWorkingDays++;
-                Random random = new Random();
-                int empcheck = random.Next(0, 3);
-                switch (empcheck)
-                {
-                    case 1:
-                    IS_FULL_TIME:
-                        empHrs = 8;
-                        Console.WriteLine("Employee Is Present");
-                        break;
-                    case 2:
-                    IS_PART_TIME:
-                        empHrs = 4;
-                        Console.WriteLine("Employee is Part Time");
-                        break;
-                    default:
-                        empHrs = 0;
-                        Console.WriteLine("Employee Is Absent");
-                        break;
-                }
-                totalEmpHrs += empHrs;
-                Console.WriteLine("Day : " + totalWorkingDays + "Emp HRS : " +empHrs);
-            }
-            int totalEmpWage = totalEmpHrs * EMP_RATE_PER_HR;
-            Console.WriteLine("Employee Wage For 20 Days Of Month is :" + totalEmpWage);
-            return totalEmpWage;
+    //public class EmployeeWage
+    //{
+        //public const int IS_FULL_TIME = 1;
+        //public const int IS_PART_TIME = 2;
+        //public static int computeempwage(string company, int empRatePerHour, int numOfWorkingDays, int maxHoursPerMonth)
+        //{
+        //    int empHrs = 0, totalEmpHrs = 0, totalWorkingDays = 0;      //variables
+        //    while (totalEmpHrs <= maxHoursPerMonth && totalWorkingDays < numOfWorkingDays)       //computation
+        //    {
+        //        totalWorkingDays++;
+        //        Random random = new Random();
+        //        int empCheck = random.Next(3);
+        //        switch (empCheck)
+        //        {
+        //            case IS_PART_TIME:
+        //                empHrs = 4;
+        //                break;
+        //            case IS_FULL_TIME:
+        //                empHrs = 8;
+        //                break;
+        //            default:
+        //                empHrs = 0;
+        //                break;
+        //        }
+        //        totalEmpHrs += empHrs;//as the no of working days will be passing the total no of working hrs will going on added of each day accordingly .
+        //        if (totalEmpHrs > maxHoursPerMonth)  //totalEmpHrs should not go beyond defined MaxHrs .
+        //        {
+        //            totalEmpHrs = maxHoursPerMonth;
+        //        }
+        //        //Console.WriteLine("Day#:" + totalWorkingDays + " Emp Hrs : " + empHrs);
+        //    }
+        //    int totalEmpWage = totalEmpHrs * empRatePerHour;//per hour rate * total working hour to find wage .
+        //    Console.WriteLine($"Total Emp Wage for the Company \"{company}\" is : {totalEmpWage}");
+        //    return totalEmpWage;
         }
-    }
-}
+    //}
+//}
